@@ -61,6 +61,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "first_drp.urls"
 
+REST_FRAMEWORK = {
+    "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.URLPathVersioning"
+}
+
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
